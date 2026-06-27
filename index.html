@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transit G2</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #1a1a2e;
+        color: #eee;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h1 { color: #00d4ff; font-size: 1.2rem; margin-bottom: 16px; }
+      #status {
+        background: #16213e;
+        border: 1px solid #0f3460;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        min-height: 40px;
+      }
+      #log {
+        background: #0d0d0d;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 0.75rem;
+        font-family: monospace;
+        max-height: 300px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+      }
+      .btn {
+        background: #0f3460;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 4px;
+        font-size: 0.9rem;
+      }
+      .btn:hover { background: #1a4a8a; }
+      .btn.active { background: #e94560; }
+      #mic-btn { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>🚃 Transit G2</h1>
+    <div id="status">G2への接続を待機中...</div>
+    <button class="btn" id="mic-btn">🎤 音声入力開始</button>
+    <div style="margin-top: 12px; font-size: 0.8rem; color: #aaa;">
+      「〇〇から〇〇まで」と話しかけてください
+    </div>
+    <div id="log" style="margin-top: 16px;"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
