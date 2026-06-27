@@ -1,5 +1,5 @@
 {
-  "name": "transit-g2",
+  "name": "japan-train-transit-even-g2",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
@@ -12,5 +12,12 @@
   "devDependencies": {
     "typescript": "^5.0.0",
     "vite": "^5.0.0"
+  },
+  "description": "Even G2スマートグラス向け電車経路案内アプリ",
+  "author": "TakaakiIchijo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakaakiIchijo/JapanTrainTransit-EvenG2.git"
   }
 }
